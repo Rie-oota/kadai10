@@ -1,4 +1,5 @@
 html {
+  width: 100%;
   font-size: 100%;
   box-sizing: border-box;
 }
@@ -11,13 +12,22 @@ html {
 
 body {
   position: relative;
-  width: 1200px;
+  width: 100%;
   background-color: #F0EFEC;
   font-family: Zen Kaku Gothic Antique, sans-serif;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
 .inview {
-  position: relative;
   top: 50px;
   opacity: 0;
   transition: 0.5s;
@@ -32,34 +42,35 @@ body {
 
 header {
   position: relative;
-  width: 1200px;
   z-index: 1100;
+  height: 180px;
 }
 
 .header-nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1200px;
-  height: 135px;
+  width: 100%;
+  height: 180px;
   display: flex;
   justify-content:space-between;
   align-items:center;
   z-index: 1100;
-  padding: 0 78px;
+  padding: 0 6%;
+  white-space: nowrap;
 }
 
 .header-navFixed {
   position: fixed;
   top: -200px; /* ヘッダーの高さ分上にする(隠す) */
   transition: top .5s; /* アニメーション効果を追加 */
-  width: 1200px;
+  width: 100%;
   height: 135px;
   display: flex;
   justify-content:space-between;
   align-items:center;
   z-index: 1050;
-  padding: 0 78px;
+  padding: 0 90px;
 }
 
 .header-navFixed .site-title {
@@ -72,8 +83,7 @@ header {
   z-index: 2000;
 }
 
-/* === Hambuerger Button's Style Paste Here === */
-/*+++ Reset +++*/
+/* ハンバーガーメニュー */
 
 .drawer_menu * {
   margin: 0;
@@ -127,13 +137,12 @@ header {
   top: 100%; }
 
 .drawer_button.active .drawer_bar {
-  width: 36.77px;
-  left: 8px;
+  width: 33px;
   background-color: #fff;
 }
 
 .drawer_button.active .drawer_bar_first {
-  transform: rotate(0.7854rad) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
   top: 0px;
 }
 
@@ -142,7 +151,7 @@ header {
 }
 
 .drawer_button.active .drawer_bar_third {
-  transform: rotate(-0.7854rad) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
   top: calc(100% - 0px); }
 
 .drawer_button.active .drawer_close {
@@ -150,10 +159,9 @@ header {
 }
 
 .drawer_close {
-  letter-spacing: 0.08em;
-  display: none; }
+  display: none;
+}
 
-/*+++ Default Button Color +++*/
 .drawer_button {
   color: black; }
 
@@ -198,6 +206,11 @@ header {
     transform: translate(0); }
 
 /*+++ Default Navigation CSS +++*/
+
+.site-logo {
+  width: 127px;
+  height: 37px;
+}
 .drawer_menu .drawer_nav {
   margin-top: 42px;
   display: block;
@@ -213,21 +226,30 @@ header {
   margin: 0;
 }
 
+.drawer_menu .link-icon {
+  margin-top: 60px;
+}
+
 .link-border {
   height: 1px;
   width: 72px;
-  background-color: gainsboro;
+  background-color: #e5e7eb;
+  margin-top: 56px;
 }
 
 .drawer-link-bar {
   display: block;
   font-size: 11px;
   padding-top: 30px;
-  color: gainsboro;
+  color: #fff;
 }
 
 .drawer-link-bar a {
   margin-right: 5px;
+}
+
+.drawer-link-bar a:hover {
+  color: #078E6F;
 }
 
 /* ハンバーガーメニューここまで */
@@ -238,6 +260,7 @@ header ul {
 
 header li {
   list-style: none;
+  font-family: OptimaNovaLTPro-Regular;
 }
 
 header li a {
@@ -245,54 +268,86 @@ header li a {
   text-decoration: none;
 }
 
-.nav-bar li a {
+.nav-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  gap: 44px;
   font-family: OptimaNovaLTPro-Regular;
+  z-index: 1101;
+  white-space: nowrap;
+}
+
+.nav-bar a:hover {
+  color: #078E6F;
+}
+
+.header-nav .link-icon {
+  fill: #fff;
+}
+
+.menu-icon {
+  fill: #fff;
+}
+
+.header-navFixed .link-icon {
+  fill: #333333;
 }
 
 .link-icon {
-  display: flex;
+  width: 54.28px;
+  height: 24px;
   align-items:center;
-  height: 80px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.cart-icon {
-  margin-right:46.72px;
+.link-icon svg:hover {
+  fill: #078E6F;
 }
 
 /*keyvisualセクション  */
 
 .keyvisual {
-  position: relative;
-  height: 830px;
-  width: 1200px;
+  height: 1000px;
 }
 
 .gray-background {
-  margin-left: 232px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
 }
 
 .curry-image {
-  z-index: 1;
   position: absolute;
-  top: 150px;
-  left: 90px;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 85%;
+}
+
+.curry-image img {
   border: solid 1px black;
 }
 
 .keyvisual .site-title {
-  width: 300px;
-  height: 87.15px;
   position: absolute;
-  top: 139px;
+  top: 158.15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  width: 300px;
+  height: 90px;
 }
 
 .scroll {
   position: absolute;
-  top: 600px;
-  right: 44px;
+  top: 800px;
+  right: 3%;
 }
 
 .scroll-text {
@@ -331,7 +386,7 @@ header li a {
 /*noilly-meaningセクション*/
 
 .noilly-meaning {
-  padding-top: 60px;
+  padding-top: 72px;
 }
 
 .slide-logo {
@@ -341,9 +396,10 @@ header li a {
 }
 
 .slide-logo p {
+  font-family: OptimaNovaLTPro-Regular;
   color: #fff;
-  font-size: 120px;
-  margin-right: 45px;
+  font-size: 144px;
+  margin-right: 44px;
   animation: loop 15s linear infinite;
 }
 
@@ -356,29 +412,51 @@ header li a {
   }
 }
 
-.noilly-meaning-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items:flex-end;
-  padding-left: 180px;
+@keyframes loop2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
+.noilly-meaning-flex {
+  display: flex;
+  align-items:flex-end;
+  padding-left: 216px;
+  height: 482px;
+  gap: 10%;
+}
+
+.noilly-meaning .text-area {
+  height: 100%;
+  width: 45%;
+}
+
+.noilly-meaning-flex .image-area {
+  width: 45%;
+}
+
+.noilly-meaning .title-number {
+  margin-bottom: 35px;
+}
+
+
 .title-number {
+  font-family: OptimaNovaLTPro-Regular;
   color: #128E6F;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .noilly-meaning .text-area h1 {
   font-size: 23px;
-  margin-bottom: 20px;
-}
-
-.noilly-meaning .text-area .text-item {
-  font-size: 17px;
+  margin-bottom: 23px;
 }
 
 .noilly-meaning .text-area .text-item p {
-  margin-bottom: 17px;
+  font-size: 17px;
+  margin-bottom: 18px;
 }
 
 .noilly-meaning .text-area .text-item p:last-child {
@@ -387,46 +465,55 @@ header li a {
 
 .oil-free {
   position: relative;
-  margin-top: 220px;
-  height: 454px;
+  width: 100%;
+  height: 545px;
+  margin-top: 264px;
+  padding: 0 14%;
 }
 
 .oil-free-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 0;
+  object-fit: cover;
 }
 
 .oil-free-flex {
   position: absolute;
   top: 0;
-  left: 180px;
-  width: 900px;
+  width: 80%;
   height: 374px;
   display: flex;
   justify-content: space-between;
 }
 
+.oil-free .image-area {
+  position: relative;
+  margin-top: -10%;
+  width: 422px;
+  height: 568px;
+}
+
 .oil-free-logo {
   position: absolute;
-  top: 52px;
-  left: 130px;
+  bottom: -5%;
+  left: -15%;
   z-index: 1;
   color: #fff;
   opacity: 0.5;
-  font-size: 100px;
+  font-size: 95px;
   writing-mode: vertical-rl;
-}
-
-.oil-free .image-area {
-  margin-top: -103px;
+  white-space: nowrap;
 }
 
 .oil-free .text-area {
-  padding-top: 108px;
+  padding-top: 10%;
 }
 
 .oil-free .text-area h1 {
-  font-size: 23px;
-  margin-bottom: 19px;
+  font-size: 28px;
+  margin-bottom: 24px;
 }
 
 .oil-free .text-item {
@@ -434,25 +521,27 @@ header li a {
 }
 
 .oil-free .text-item p {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .text-small {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .oil-free .title-number {
   position: absolute;
-  top: 118px;
-  right: 10px;
+  top: 30%;
+  right: 0;
   writing-mode: vertical-rl;
+  font-family: OptimaNovaLTPro-Regular;
+  color: #fff;
 }
 
 /*holiday-nonoilセクション*/
 
 .holiday-nonoil {
   position: relative;
-  height: 915px;
+  height: 1098px;
   margin-top: 50px;
 }
 
@@ -461,7 +550,7 @@ header li a {
   top: 0;
   left: 0;
   color: #fff;
-  font-size: 345px;
+  font-size: 414px;
   opacity: 0.3;
   font-family: OptimaNovaLTPro-Regular;
   width: 100%;
@@ -472,29 +561,30 @@ header li a {
   position: absolute;
   top: 0;
   left: 40px;
-  height: 345px;
+  width: 100%;
+  height: 50%;
+  margin-top: -8%;
 }
 
 .background-text-continuation {
   position: absolute;
   bottom: 0;
   left: -40px;
-  height: 345px;
-  vertical-align: bottom;
+  width: 100%;
+  height: 50%;
 }
 
 .holiday-nonoil-flex {
   display: flex;
   justify-content: space-between;
-  gap: 97px;
+  align-items: center;
+  gap: 32px;
   z-index: 1;
-  padding-top: 380px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 23% 12% 0;
 }
 
 .holiday-nonoil .text-area {
-  padding-left: 219px;
+  padding-left: 15%;
 }
 
 .holiday-nonoil .title-number {
@@ -502,13 +592,14 @@ header li a {
 }
 
 .holiday-nonoil .text-area h1 {
-  margin-bottom: 20px;
-  font-size: 23px;
+  margin-bottom: 24px;
+  font-size: 28px;
 }
 
 .holiday-nonoil .text-item p {
-  margin-bottom: 15px;
-  font-size: 13px;
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 31.2px;
 }
 
 .holiday-nonoil .text-item:last-child {
@@ -516,7 +607,7 @@ header li a {
 }
 
 .holiday-nonoil-link {
-  margin-top: 24px;
+  margin-top: 28px;
   font-size: 16px;
   border-bottom: solid 1px #128E6F;
   border-bottom-width: 1px;
@@ -529,39 +620,45 @@ header li a {
 }
 
 .holiday-nonoil .image-area img {
-  margin-top: 100px;
-  margin-right: 40px;
+  width: 542px;
+  height: 209px;
+  margin-top: 20%;
+  margin-right: 10%;
 }
 
 /*noilly-particularセクション*/
 
 .noilly-particular {
   position: relative;
-  margin-top: 228px;
-  height: 527px;
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
 }
 
 .noilly-particular .slide-logo {
   position: absolute;
-  top: 100px;
+  top: 13%;
   z-index: -1;
   width: 100%;
   overflow: hidden;
 }
 
+.slide-logo-sub {
+  display: none;
+}
+
 .double-slider {
   display: flex;
-  padding: 0 170px;
+  padding: 0 14%;
 }
 
 .main-slider {
-  width: 343px;
-  height: 527px;
+  width: 40%;
 }
 
 .main-slider figure {
   position: absolute;
-  left: 170px;
+  left: 14%;
 }
 
 .main-slider figure:nth-of-type(1) {
@@ -585,17 +682,12 @@ header li a {
 }
 
 .double-slider .swiper {
-  margin-top: 294px;
-  width: 312px;
-  margin-left: 205px;
-}
-
-.swiper-slide-item .title-number {
-  margin-top: 14px;
+  margin-top: 28%;
+  width: 374px;
 }
 
 .swiper-slide-item h1 {
-  font-size: 23px;
+  font-size: 28px;
 }
 
 .swiper-slide-item1 h1 {
@@ -603,8 +695,8 @@ header li a {
 }
 
 .swiper-slide-item p {
-  line-height: 26px;
-  font-size: 13px;
+  line-height: 31.2px;
+  font-size: 16px;
 }
 
 /* ===== ページネーション（円形プログレスバー付き） ===== */
@@ -612,7 +704,7 @@ header li a {
   width: initial !important;
   height: 155px;
   position: absolute;
-  left: 61px!important;
+  left: 5%!important;
   top: 50%!important;
   transform: translateY(-50%);
   display: flex;
@@ -698,7 +790,7 @@ header li a {
 
 .product {
   position: relative;
-  margin-top: 229px;
+  margin-top: 27%;
 }
 
 .product-title {
@@ -709,7 +801,7 @@ header li a {
 
 .sub-title {
   color: #fff;
-  font-size: 60px;
+  font-size: 72px;
   z-index: 0;
 }
 
@@ -722,54 +814,70 @@ header li a {
 }
 
 .slide-product {
-  margin-top: 73px;
+  margin-top: 8%;
 }
 
 .slide-product ul {
   display: flex;
   list-style: none;
   overflow: hidden;
-  gap: 70px;
+  gap: 7%;
+  margin-left: -10%;
+}
+
+.slide-product ul li {
+  width: 30%;
 }
 
 .product-item h3 {
-  font-size: 15px;
-  margin-bottom: 18px;
+  font-size: 16px;
+  margin-bottom: 20%;
   text-align: center;
 }
 
 .price-notation {
   display: flex;
   align-items: baseline;
-  margin-bottom: 14px;
-  padding: 19px 15px 0;
+  margin-bottom: 2%;
+  padding: 3% 2% 0;
 }
 
 .item-gide {
-  padding: 0 15px;
+  padding: 0 3%;
 }
+
 .price {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .tax {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .item-btn-flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 12px;
-  padding: 0 15px;
+  margin-top: 2%;
+  padding: 0 3%;
 }
 
 .item-btn {
   padding: 10px 17px;
-  font-size: 12px;
+  font-size: 16px;
+  white-space: nowrap;
 }
 
 .view-btn {
-  border: solid 1px black;
+  border: solid 1px #333333;
+}
+
+.view-btn a {
+  color: #333333;
+}
+
+.view-btn:hover {
+  background-color: #333333;
+  color: #fff;
 }
 
 .sold-btn {
@@ -779,17 +887,26 @@ header li a {
 
 .cart-btn {
   border: solid 1px #128E6F;
+  align-items: baseline;
+}
+
+.cart-btn a {
   color: #128E6F;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+}
+
+.cart-btn:hover {
+  background-color: #128E6F;
+  color: #fff;
 }
 
 /*contactセクション */
 
 .contact {
+  position: relative;
   margin: 135px 0 60px;
   text-align: center;
+  font-family: OptimaNovaLTPro-Regular;
 }
 
 .contact p {
@@ -805,6 +922,10 @@ header li a {
   gap: 48px;
 }
 
+.contact a:hover {
+  color: #078E6F;
+}
+
 /* フッター */
 
 footer {
@@ -813,25 +934,38 @@ footer {
 
 .page-top {
   height: 172px;
-  padding: 0 70px;
+  padding: 0 5%;
 }
 
 .page-top a {
   position: absolute;
   top: 0;
-  right: 70px;
+  right: 5%;
   text-decoration: none;
   color: black;
   border-right: solid 1px gray;
   padding: 133.8px 20px 15px 0;
-  font-size: 13px;
+  font-size: 16px;
+  font-family: OptimaNovaLTPro-Regular;
+}
+
+.page-top a:hover {
+  color: #078E6F;
+}
+
+footer {
+  position: relative;
 }
 
 .footer-flex {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 80px;
-  column-gap: 104px;
+  column-gap: 20%;
+  padding: 0 7%;
+}
+
+footer .site-title {
+  width: 116px;
+  height: 33.7px;
 }
 
 .link-list a {
@@ -844,25 +978,348 @@ footer {
   list-style: none;
 }
 
-.nav-bar {
-  font-size: 20px;
-}
-
-.nav-bar a {
-  margin-right: 35px;
-}
-
 .link-bar {
-  font-size: 14px;
+  font-size: 10px;
+  gap: 44px;
+  color: #989898;
 }
 
-.link-bar a {
-  color: gray;
-  margin-right: 15px;
+footer .link-bar a:hover {
+  color: #078E6F;
 }
+
 .trademark {
   font-size: 16px;
   margin-top: 10px;
-  padding-left: 80px;
+  padding-left: 7%;
   margin-bottom: 90px;
+}
+
+/* レスポンシブ対応 */
+
+@media screen and (max-width: 767px) {
+
+  header .nav-bar {
+    display: none;
+  }
+
+  .gray-background {
+    top: 250px;
+  }
+
+  .curry-image {
+    top: 500px;
+  }
+
+  .scroll {
+    top: 695px;
+  }
+
+  .drawer_button {
+    transform: scale(1.5);
+  }
+
+  header .link-icon {
+    transform: scale(1.5);
+  }
+
+  .drawer_nav_wrapper .link-border {
+    display: none;
+  }
+
+  .drawer_nav_wrapper .drawer-link-bar {
+    display: none;
+  }
+
+  .drawer_nav_wrapper .drawer_nav li:first-child {
+    display: none;
+  }
+
+  .drawer_nav_wrapper .site-logo {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .drawer_menu .drawer_nav_wrapper {
+    width: 700px;
+    transform: translate(-700px);
+  }
+
+  .drawer_menu .drawer_nav li {
+    font-size: 37px;
+  }
+
+  .drawer_content {
+    padding: 0 95px;
+    margin: 0;
+  }
+
+  .noilly-meaning-potition {
+    position: relative;
+    height: 1000px;
+  }
+
+  .slide-logo {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .noilly-meaning-flex {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding-left: 12%;
+    height: 650px;
+    gap: 0;
+    position: absolute;
+    z-index: 1;
+    top: 340px;
+    width: 100%;
+  }
+
+  .title-number {
+    font-size: 24px;
+  }
+
+  .noilly-meaning .text-area {
+    width: 100%;
+    padding-right: 7%;
+  }
+
+  .noilly-meaning .text-area h1 {
+    font-size: 43px;
+  }
+
+  .noilly-meaning .text-area .text-item p {
+    font-size: 24px;
+    line-height: 48.2px;
+  }
+
+  .noilly-meaning .title-number {
+    position: absolute;
+    top: -50px;
+  }
+
+  .noilly-meaning-flex .image-area {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .noilly-meaning-flex .image-area img {
+    margin-right: 2%;
+    margin-left: 16%;
+    width: 515px;
+    height: 384px;
+  }
+
+  .oil-free {
+    height: 1250px;
+  }
+
+  .oil-free-flex {
+    flex-direction: column;
+    margin: 0 0 auto 0;
+  }
+
+  .oil-free .image-area {
+    width: 100%;
+    height: 589px;
+    margin-top: -32%;
+  }
+
+  .oil-free .image-area img {
+    width: 439px;
+    height: 589px;
+    margin-left: 20%;
+  }
+
+  .oil-free .text-area {
+    padding: 55px 0 0 0;
+  }
+
+  .oil-free .text-area h1 {
+    color: #fff;
+  }
+
+  .oil-free .text-area p {
+    color: #fff;
+  }
+
+  .text-small {
+    font-size: 20px!important;
+  }
+
+  .oil-free-logo {
+    position: absolute;
+    bottom: -15%;
+    left: -3%;
+    writing-mode: unset;
+  }
+
+  .oil-free .title-number {
+    position: absolute;
+    top: 125%;
+    right: 8%;
+    height: 100px;
+  }
+
+  .holiday-nonoil {
+    margin: 0;
+  }
+
+  .background-text {
+    font-size: 270px;
+  }
+
+  .background-text-initial {
+    left: -40px;
+  }
+
+  .background-text-continuation {
+    top: 30%;
+  }
+
+  .holiday-nonoil-flex {
+    flex-direction: column-reverse;
+    padding: 50px 12% 0;
+  }
+
+  .holiday-nonoil-flex .text-area {
+    padding: 0;
+    width: 100%;
+  }
+
+  .holiday-nonoil-flex .text-area h1 {
+    font-size: 37px;
+    margin-bottom: 37px;
+  }
+
+  .holiday-nonoil-flex .text-area p {
+    font-size: 24px;
+    line-height: 48.2px;
+  }
+
+  .holiday-nonoil-link {
+    font-size: 24px;
+    margin-top: 44px;
+  }
+
+  .slide-logo-main {
+    transform: rotate(90deg);
+    top: 10%;
+    left: -50%;
+  }
+
+  .slide-logo-sub {
+    display: flex;
+    transform: rotate(90deg);
+    top: 10%;
+    right: -50%;
+  }
+
+  .slide-logo-sub p {
+    animation: loop2 15s linear infinite;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .noilly-particular {
+    height: 1000px;
+  }
+
+  .slide-product ul {
+    flex-direction: column;
+    margin: 0;
+    gap: 90px;
+  }
+
+  .slide-product ul li {
+    width: 100%;
+  }
+
+  .product-item h3 {
+    margin-bottom: 37px;
+  }
+
+  .product-item-image {
+    margin: 0 30%;
+  }
+
+  .price-notation {
+    align-items: baseline;
+    margin-bottom: 2%;
+    padding: 37px 22% 0;
+  }
+
+  .item-gide {
+    padding: 0 22%;
+    line-height: 1.7;
+  }
+
+  .item-btn-flex {
+    padding: 0 22%;
+  }
+
+  .item-btn {
+    width: 45%;
+    height: 30%;
+    padding: 10px 60px;
+  }
+
+  .cart-btn a {
+    gap: 10px;
+  }
+
+  .contact {
+    padding: 0 20%;
+    margin-bottom: 148px;
+  }
+
+  .contact a {
+    font-size: 80px;
+    white-space: nowrap;
+  }
+
+  .contact-text {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  .page-top {
+    display: none;
+  }
+
+  .link-list {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-flex {
+    padding: 0 22%;
+  }
+
+  .trademark {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    margin: 0;
+  }
+
+  .double-slider {
+    flex-direction: column;
+  }
+
+  .main-slider figure {
+    display: block;
+  }
+
 }

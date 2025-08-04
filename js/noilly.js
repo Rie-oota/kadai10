@@ -24,6 +24,38 @@ $(function () {
   });
 });
 
+$(function () {
+  // viewボタンにマウスをかざした時に実行する処理
+  $(".view-btn").mouseover(function () {
+    // ボタン内の文字色を白に変更
+    $(this).find(".view-btn-text").css("color","#ffffff");
+  });
+});
+
+$(function () {
+  // viewボタンからマウスを離した時に実行する処理
+  $(".view-btn").mouseout(function () {
+    // ボタン内の文字色を白に変更
+    $(this).find(".view-btn-text").css("color","#333333");
+  });
+});
+
+$(function () {
+  // cartボタンにマウスをかざした時に実行する処理
+  $(".cart-btn").mouseover(function () {
+    // ボタン内の文字色を緑に変更
+    $(this).find(".cart-btn-text").css("color","#ffffff");
+  });
+});
+
+$(function () {
+  // cartボタンからマウスを離した時に実行する処理
+  $(".cart-btn").mouseout(function () {
+    // ボタン内の文字色を緑に変更
+    $(this).find(".cart-btn-text").css("color","#128E6F");
+  });
+});
+
 const swiper2 = new Swiper('.swiper2', {
   loop: true,
   speed: 300,
