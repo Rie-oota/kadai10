@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+*{
+    outline: 2px red solid;
+}
+
 body {
   position: relative;
   width: 100%;
@@ -44,6 +48,7 @@ header {
   position: relative;
   z-index: 1100;
   height: 180px;
+  width: 100%;
 }
 
 .header-nav {
@@ -66,16 +71,25 @@ header {
   transition: top .5s; /* アニメーション効果を追加 */
   width: 100%;
   height: 135px;
+  z-index: 1050;
+}
+
+.header-navFixed-menu {
+  width: 100%;
   display: flex;
   justify-content:space-between;
+  padding: 0 6%;
   align-items:center;
-  z-index: 1050;
-  padding: 0 90px;
+  height: 135px;
 }
 
 .header-navFixed .site-title {
   width: 99.6px;
   height: 33.7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 #js-header.is-show {
@@ -177,10 +191,10 @@ header {
   color: inherit; }
 
 .drawer_menu .drawer_nav_wrapper {
-  width: 400px;
+  width: 480px;
   height: 100%;
   transition: all 0.5s;
-  transform: translate(-400px);
+  transform: translate(-480px);
   position: fixed;
   top: 0;
   left: 0;
@@ -199,7 +213,7 @@ header {
   left: 32px; }
 
 .drawer_menu.left .drawer_nav_wrapper {
-  transform: translate(400px);
+  transform: translate(480px);
   right: auto;
   left: 0; }
   .drawer_menu.left .drawer_nav_wrapper.open {
@@ -273,7 +287,7 @@ header li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 20px;
+  font-size: 16px;
   gap: 44px;
   font-family: OptimaNovaLTPro-Regular;
   z-index: 1101;
@@ -311,7 +325,9 @@ header li a {
 /*keyvisualセクション  */
 
 .keyvisual {
+  position: relative;
   height: 1000px;
+  width: 100%;
 }
 
 .gray-background {
@@ -346,7 +362,7 @@ header li a {
 
 .scroll {
   position: absolute;
-  top: 800px;
+  bottom: 112px;
   right: 3%;
 }
 
@@ -560,18 +576,20 @@ header li a {
 .background-text-initial {
   position: absolute;
   top: 0;
-  left: 40px;
   width: 100%;
   height: 50%;
   margin-top: -8%;
+  overflow: hidden;
+  padding-left: 3%;
 }
 
 .background-text-continuation {
   position: absolute;
   bottom: 0;
-  left: -40px;
+  padding-left: -3%;
   width: 100%;
   height: 50%;
+  overflow: hidden;
 }
 
 .holiday-nonoil-flex {
@@ -1222,10 +1240,6 @@ footer .link-bar a:hover {
     animation: loop2 15s linear infinite;
   }
 
-  .swiper-pagination {
-    display: none;
-  }
-
   .noilly-particular {
     height: 1000px;
   }
@@ -1240,6 +1254,58 @@ footer .link-bar a:hover {
     width: 100%;
   }
 
+  .noilly-particular {
+    height: 2790px;
+  }
+
+  .particular-contents {
+    display: flex;
+    flex-direction:column;
+    gap: 112px;
+  }
+
+  .particular-item-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 75px;
+  }
+
+  .particular-item-title {
+    writing-mode: vertical-rl;
+  }
+
+  .particular-item-title .title-number {
+    font-size: 24px;
+    margin-left: 4%;
+  }
+
+  .particular-item-title h1 {
+    font-size: 43px;
+  }
+
+  .text-left{
+    font-size: 24px;
+    padding: 0 21% 0 7%;
+  }
+
+  .text-right {
+    font-size: 24px;
+    padding: 0 7% 0 21%;
+  }
+
+  .particular-item-title span {
+    text-combine-upright: all;
+  }
+
+  .image-left {
+    transform: rotate(-3deg);
+  }
+
+  .image-right {
+    transform: rotate(3deg);
+  }
+
   .product-item h3 {
     margin-bottom: 37px;
   }
@@ -1247,6 +1313,7 @@ footer .link-bar a:hover {
   .product-item-image {
     margin: 0 30%;
   }
+
 
   .price-notation {
     align-items: baseline;
@@ -1312,14 +1379,6 @@ footer .link-bar a:hover {
     top: 0;
     right: 20%;
     margin: 0;
-  }
-
-  .double-slider {
-    flex-direction: column;
-  }
-
-  .main-slider figure {
-    display: block;
   }
 
 }
