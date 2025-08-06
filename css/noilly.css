@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-*{
-    outline: 2px red solid;
-}
-
 body {
   position: relative;
   width: 100%;
