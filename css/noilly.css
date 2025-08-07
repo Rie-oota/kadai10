@@ -14,7 +14,6 @@ body {
   position: relative;
   width: 100%;
   background-color: #F0EFEC;
-  font-family: Zen Kaku Gothic Antique, sans-serif;
 }
 
 img {
@@ -278,16 +277,22 @@ header li a {
   text-decoration: none;
 }
 
-.nav-bar {
+header .nav-bar {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 16px;
-  gap: 44px;
-  font-family: OptimaNovaLTPro-Regular;
+}
+
+.nav-bar {
+  gap: 22px;
   z-index: 1101;
   white-space: nowrap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .nav-bar a:hover {
@@ -322,20 +327,19 @@ header li a {
 
 .keyvisual {
   position: relative;
-  height: 1000px;
   width: 100%;
 }
 
 .gray-background {
   position: absolute;
-  top: 0;
+  top: -180px;
   right: 0;
   width: 80%;
 }
 
 .curry-image {
   position: absolute;
-  top: 180px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -348,7 +352,7 @@ header li a {
 
 .keyvisual .site-title {
   position: absolute;
-  top: 158.15px;
+  top: -21.85px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -358,14 +362,18 @@ header li a {
 
 .scroll {
   position: absolute;
-  bottom: 112px;
+  bottom: 14%;
   right: 3%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .scroll-text {
   writing-mode: vertical-rl;
   color: #fff;
-  font-size: 13px;
 }
 
 .scroll-bar {
@@ -398,6 +406,7 @@ header li a {
 /*noilly-meaningセクション*/
 
 .noilly-meaning {
+  position: relative;
   padding-top: 72px;
 }
 
@@ -405,15 +414,21 @@ header li a {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
 }
 
 .slide-logo p {
-  font-family: OptimaNovaLTPro-Regular;
-  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 144px;
+  line-height: 216px;
+  color: #fff;
   margin-right: 44px;
   animation: loop 15s linear infinite;
 }
+
+
 
 @keyframes loop {
   0% {
@@ -454,21 +469,31 @@ header li a {
   margin-bottom: 35px;
 }
 
-
 .title-number {
-  font-family: OptimaNovaLTPro-Regular;
   color: #128E6F;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 23px;
 }
 
 .noilly-meaning .text-area h1 {
-  font-size: 23px;
   margin-bottom: 23px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
 }
 
 .noilly-meaning .text-area .text-item p {
-  font-size: 17px;
   margin-bottom: 18px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
 }
 
 .noilly-meaning .text-area .text-item p:last-child {
@@ -524,12 +549,22 @@ header li a {
 }
 
 .oil-free .text-area h1 {
-  font-size: 28px;
   margin-bottom: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+  color: #fff;
 }
 
 .oil-free .text-item {
-  font-size: 13px;
+  color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
 }
 
 .oil-free .text-item p {
@@ -537,7 +572,11 @@ header li a {
 }
 
 .text-small {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
+  line-height: 26px;
 }
 
 .oil-free .title-number {
@@ -545,7 +584,11 @@ header li a {
   top: 30%;
   right: 0;
   writing-mode: vertical-rl;
-  font-family: OptimaNovaLTPro-Regular;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
   color: #fff;
 }
 
@@ -554,7 +597,7 @@ header li a {
 .holiday-nonoil {
   position: relative;
   height: 1098px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .background-text {
@@ -562,11 +605,14 @@ header li a {
   top: 0;
   left: 0;
   color: #fff;
-  font-size: 414px;
   opacity: 0.3;
-  font-family: OptimaNovaLTPro-Regular;
   width: 100%;
   height: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 414px;
+  line-height: 414px;
 }
 
 .background-text-initial {
@@ -594,20 +640,35 @@ header li a {
   align-items: center;
   gap: 32px;
   z-index: 1;
-  padding: 23% 12% 0;
+  padding: 17% 12% 0;
 }
 
 .holiday-nonoil .text-area {
   padding-left: 15%;
+  width: 50%;
+}
+
+.holiday-nonoil .image-area {
+  width: 50%;
 }
 
 .holiday-nonoil .title-number {
   margin-bottom: 29px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #128E6F;
 }
 
 .holiday-nonoil .text-area h1 {
   margin-bottom: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 28px;
+  line-height: 41px;
 }
 
 .holiday-nonoil .text-item p {
@@ -621,8 +682,13 @@ header li a {
 }
 
 .holiday-nonoil-link {
-  margin-top: 28px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 33px;
+  letter-spacing: 0.78px;
+  margin-top: 28px;
   border-bottom: solid 1px #128E6F;
   border-bottom-width: 1px;
   width: fit-content;
@@ -655,6 +721,11 @@ header li a {
   z-index: -1;
   width: 100%;
   overflow: hidden;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 216px;
 }
 
 .slide-logo-sub {
@@ -673,21 +744,22 @@ header li a {
 .main-slider figure {
   position: absolute;
   left: 14%;
+  transition-duration: 0.3s;
 }
 
 .main-slider figure:nth-of-type(1) {
   transform: rotate(-14deg);
-  z-index: 3;
+  z-index: 1;
 }
 
 .main-slider figure:nth-of-type(2) {
-  transform: rotate(0);
-  z-index: 2;
+  transform: rotate(-14deg);
+  z-index: 3;
 }
 
 .main-slider figure:nth-of-type(3) {
   transform: rotate(15deg);
-  z-index: 1;
+  z-index: 2;
 }
 
 .is-active {
@@ -700,8 +772,21 @@ header li a {
   width: 374px;
 }
 
+.swiper .title-number {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #128E6F;
+}
+
 .swiper-slide-item h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
   font-size: 28px;
+  line-height: 41px;
 }
 
 .swiper-slide-item1 h1 {
@@ -709,8 +794,11 @@ header li a {
 }
 
 .swiper-slide-item p {
-  line-height: 31.2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 31px;
 }
 
 /* ===== ページネーション（円形プログレスバー付き） ===== */
@@ -815,16 +903,25 @@ header li a {
 
 .sub-title {
   color: #fff;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 72px;
-  z-index: 0;
+  line-height: 108px;
 }
 
 .product-title h1 {
   position: absolute;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-25%);
   width: 100%;
   z-index: 1;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2.4px;
 }
 
 .slide-product {
@@ -844,7 +941,11 @@ header li a {
 }
 
 .product-item h3 {
-  font-size: 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
   margin-bottom: 20%;
   text-align: center;
 }
@@ -858,14 +959,27 @@ header li a {
 
 .item-gide {
   padding: 0 3%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 20px;
+  line-height: 31px;
 }
 
 .tax {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 13px;
+  line-height: 20px;
 }
 
 .item-btn-flex {
@@ -881,22 +995,33 @@ header li a {
   white-space: nowrap;
 }
 
-.view-btn {
-  border: solid 1px #333333;
+.view-btn a {
+  color: #000;
 }
 
-.view-btn a {
-  color: #333333;
+.view-btn {
+  border: solid 1px #333333;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .view-btn:hover {
-  background-color: #333333;
+  background-color: #000;
   color: #fff;
 }
 
 .sold-btn {
-  border: solid 1px gray;
-  color: gray;
+  border: solid 1px #A7A7A7;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #A7A7A7;
 }
 
 .cart-btn {
@@ -907,6 +1032,12 @@ header li a {
 .cart-btn a {
   color: #128E6F;
   display: flex;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
 }
 
 .cart-btn:hover {
@@ -920,7 +1051,14 @@ header li a {
   position: relative;
   margin: 135px 0 60px;
   text-align: center;
-  font-family: OptimaNovaLTPro-Regular;
+}
+
+.contact-text {
+  font-size: 15.6px;
+  font-family: Zen Kaku Gothic Antique, sans-serif;
+  line-height: 2;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .contact p {
@@ -928,12 +1066,13 @@ header li a {
 }
 
 .contact a {
-  font-size: 100px;
+  font-size: 120px;
   color: black;
   text-decoration: none;
   display: flex;
   justify-content: center;
   gap: 48px;
+  font-family: OptimaNovaLTPro-Regular;
 }
 
 .contact a:hover {
@@ -959,8 +1098,13 @@ footer {
   color: black;
   border-right: solid 1px gray;
   padding: 133.8px 20px 15px 0;
-  font-size: 16px;
   font-family: OptimaNovaLTPro-Regular;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: right;
 }
 
 .page-top a:hover {
@@ -973,7 +1117,7 @@ footer {
 
 .footer-flex {
   display: flex;
-  column-gap: 20%;
+  column-gap: 14.15%;
   padding: 0 7%;
 }
 
@@ -982,9 +1126,18 @@ footer .site-title {
   height: 33.7px;
 }
 
+footer .nav-bar {
+  vertical-align: bottom;
+}
+
 .link-list a {
   text-decoration: none;
   color: black;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .link-list ul {
@@ -993,9 +1146,16 @@ footer .site-title {
 }
 
 .link-bar {
-  font-size: 10px;
-  gap: 44px;
+  gap: 19px;
+}
+
+.link-bar a {
   color: #989898;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 footer .link-bar a:hover {
@@ -1003,7 +1163,11 @@ footer .link-bar a:hover {
 }
 
 .trademark {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
   margin-top: 10px;
   padding-left: 7%;
   margin-bottom: 90px;
@@ -1018,15 +1182,16 @@ footer .link-bar a:hover {
   }
 
   .gray-background {
-    top: 250px;
+    top: 70px;
   }
 
   .curry-image {
-    top: 500px;
+    top: 320px;
   }
 
   .scroll {
-    top: 695px;
+    font-size: 20px;
+    line-height: 31px;
   }
 
   .drawer_button {
@@ -1035,6 +1200,10 @@ footer .link-bar a:hover {
 
   header .link-icon {
     transform: scale(1.5);
+  }
+
+  .header-navFixed .link-icon {
+    display: none;
   }
 
   .drawer_nav_wrapper .link-border {
@@ -1070,14 +1239,19 @@ footer .link-bar a:hover {
     margin: 0;
   }
 
-  .noilly-meaning-potition {
+  .noilly-meaning-position {
     position: relative;
-    height: 1000px;
+    height: 1308px;
   }
 
   .slide-logo {
     position: absolute;
     z-index: -1;
+  }
+
+  .noilly-meaning .slide-logo p {
+    font-size: 204px;
+    line-height: 306px;
   }
 
   .noilly-meaning-flex {
@@ -1088,12 +1262,13 @@ footer .link-bar a:hover {
     gap: 0;
     position: absolute;
     z-index: 1;
-    top: 340px;
+    top: 630px;
     width: 100%;
   }
 
   .title-number {
     font-size: 24px;
+    line-height: 36px;
   }
 
   .noilly-meaning .text-area {
@@ -1103,11 +1278,12 @@ footer .link-bar a:hover {
 
   .noilly-meaning .text-area h1 {
     font-size: 43px;
+    line-height: 64px;
   }
 
   .noilly-meaning .text-area .text-item p {
     font-size: 24px;
-    line-height: 48.2px;
+    line-height: 48px;
   }
 
   .noilly-meaning .title-number {
@@ -1154,10 +1330,14 @@ footer .link-bar a:hover {
 
   .oil-free .text-area h1 {
     color: #fff;
+    font-size: 43px;
+    line-height: 64px;
   }
 
   .oil-free .text-area p {
     color: #fff;
+    font-size: 24px;
+    line-height: 48px;
   }
 
   .text-small {
@@ -1176,6 +1356,8 @@ footer .link-bar a:hover {
     top: 125%;
     right: 8%;
     height: 100px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .holiday-nonoil {
@@ -1184,10 +1366,12 @@ footer .link-bar a:hover {
 
   .background-text {
     font-size: 270px;
+    line-height: 270px;
   }
 
   .background-text-initial {
     left: -40px;
+    margin-top: 10px;
   }
 
   .background-text-continuation {
@@ -1206,6 +1390,7 @@ footer .link-bar a:hover {
 
   .holiday-nonoil-flex .text-area h1 {
     font-size: 37px;
+    line-height: 56px;
     margin-bottom: 37px;
   }
 
@@ -1216,7 +1401,15 @@ footer .link-bar a:hover {
 
   .holiday-nonoil-link {
     font-size: 24px;
+    line-height: 51px;
+    letter-spacing: 1.20423px;
     margin-top: 44px;
+  }
+
+  .noilly-particular .slide-logo {
+  font-size: 170px;
+  line-height: 256px;
+  overflow: hidden;
   }
 
   .slide-logo-main {
@@ -1236,8 +1429,54 @@ footer .link-bar a:hover {
     animation: loop2 15s linear infinite;
   }
 
-  .noilly-particular {
-    height: 1000px;
+  /* メディアクエリ用 ここから*/
+
+  .swiper-wrapper {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .slider1 {
+    position: absolute;
+    top: 0;
+  }
+
+  .slider2 {
+    position: absolute;
+    top: 984px;
+  }
+
+  .point-text2 {
+    position: absolute;
+    top: 1200px;
+  }
+
+  .slider3 {
+    position: absolute;
+    top: 1968px;
+  }
+
+  .main-slider figure:nth-of-type(1) {
+    transform: rotate(0);
+  }
+
+  .main-slider figure:nth-of-type(2) {
+  transform: rotate(0);
+  }
+
+  .main-slider figure:nth-of-type(3) {
+  transform: rotate(0);
+  }
+
+  .swiper-slide-item .title-number {
+    writing-mode: vertical-rl;
+  }
+
+  .swiper-slide-item h1 {
+    writing-mode: vertical-rl;
   }
 
   .slide-product ul {
@@ -1249,55 +1488,70 @@ footer .link-bar a:hover {
   .slide-product ul li {
     width: 100%;
   }
+  /* メディアクエリ用 ここまで*/
 
   .noilly-particular {
     height: 2790px;
   }
 
+  /* モバイルHTML用 */
   .particular-contents {
     display: flex;
     flex-direction:column;
     gap: 112px;
   }
 
+    /* モバイルHTML用 */
   .particular-item-image {
     display: flex;
     justify-content: space-between;
     padding: 0 10%;
     margin-bottom: 75px;
   }
-
+  /* モバイルHTML用 */
   .particular-item-title {
     writing-mode: vertical-rl;
   }
 
+    /* モバイルHTML用 */
   .particular-item-title .title-number {
     font-size: 24px;
     margin-left: 4%;
   }
 
+    /* モバイルHTML用 */
   .particular-item-title h1 {
     font-size: 43px;
+    line-height: 64px;
+    letter-spacing: 9.26328px;
   }
 
-  .text-left{
+  .point-text {
     font-size: 24px;
+    line-height: 48px;
+  }
+
+    /* モバイルHTML用 */
+  .text-left{
     padding: 0 21% 0 7%;
   }
 
+    /* モバイルHTML用 */
   .text-right {
-    font-size: 24px;
     padding: 0 7% 0 21%;
   }
 
+    /* モバイルHTML用 */
   .particular-item-title span {
     text-combine-upright: all;
   }
 
+    /* モバイルHTML用 */
   .image-left {
     transform: rotate(-3deg);
   }
 
+    /* モバイルHTML用 */
   .image-right {
     transform: rotate(3deg);
   }
@@ -1309,7 +1563,6 @@ footer .link-bar a:hover {
   .product-item-image {
     margin: 0 30%;
   }
-
 
   .price-notation {
     align-items: baseline;
