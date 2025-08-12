@@ -29,10 +29,22 @@ $(function () {
 });
 
 $(function () {
-  // メニューボタンをクリックしたときに実行する処理
-  $(".drawer_button").click(function () {
+  // 上部のメニューボタンをクリックしたときに実行する処理
+  $("#drawer_button").click(function () {
     // ボタンのclass属性を切り替え
-    $(this).toggleClass("active");
+    $("#drawer_button").toggleClass("active");
+    $("#js-header-button").toggleClass("active");
+    // 非表示メニューのclass属性を切り替え
+    $(".drawer_nav_wrapper").toggleClass("open");
+  });
+});
+
+$(function () {
+  // スクロールで出てくるメニューボタンをクリックしたときに実行する処理
+  $("#js-header-button").click(function () {
+    // ボタンのclass属性を切り替え
+    $("#drawer_button").toggleClass("active");
+    $("#js-header-button").toggleClass("active");
     // 非表示メニューのclass属性を切り替え
     $(".drawer_nav_wrapper").toggleClass("open");
   });

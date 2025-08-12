@@ -229,6 +229,7 @@ header {
   font-size: 16px;
   margin-bottom: 20.4px;
   color: #fff;
+  font-family: 'Kaisei Opti';
 }
 
 .drawer_menu .drawer_nav li:last-child {
@@ -269,12 +270,10 @@ header ul {
 
 header li {
   list-style: none;
-  font-family: OptimaNovaLTPro-Regular;
 }
 
 header li a {
   color: #fff;
-  text-decoration: none;
 }
 
 header .nav-bar {
@@ -288,10 +287,13 @@ header .nav-bar {
   gap: 22px;
   z-index: 1101;
   white-space: nowrap;
-  font-family: 'Inter';
+}
+
+.nav-bar a {
+  font-family: 'Kaisei Opti', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19.2px;
   line-height: 24px;
 }
 
@@ -315,7 +317,6 @@ header .nav-bar {
   width: 54.28px;
   height: 24px;
   align-items:center;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -357,17 +358,17 @@ header .nav-bar {
   transform: translateX(-50%);
   z-index: 2;
   width: 300px;
-  height: 90px;
+  height: 87.15px;
 }
 
 .scroll {
   position: absolute;
   bottom: 14%;
   right: 3%;
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 13.2px;
   line-height: 20px;
 }
 
@@ -410,15 +411,18 @@ header .nav-bar {
   padding-top: 72px;
 }
 
+.noilly-meaning .slide-logo {
+  width: 100%;
+}
+
 .slide-logo {
   display: flex;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
 }
 
 .slide-logo p {
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
   font-size: 144px;
@@ -427,8 +431,6 @@ header .nav-bar {
   margin-right: 44px;
   animation: loop 15s linear infinite;
 }
-
-
 
 @keyframes loop {
   0% {
@@ -471,28 +473,28 @@ header .nav-bar {
 
 .title-number {
   color: #128E6F;
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 15.6px;
+  line-height: 23.4px;
 }
 
 .noilly-meaning .text-area h1 {
   margin-bottom: 23px;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 27.6px;
   line-height: 41px;
 }
 
 .noilly-meaning .text-area .text-item p {
   margin-bottom: 18px;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15.6px;
   line-height: 31px;
 }
 
@@ -550,20 +552,15 @@ header .nav-bar {
 
 .oil-free .text-area h1 {
   margin-bottom: 24px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 41px;
   color: #fff;
 }
 
 .oil-free .text-item {
   color: #fff;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15.6px;
   line-height: 31px;
 }
 
@@ -572,11 +569,8 @@ header .nav-bar {
 }
 
 .text-small {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 26px;
+  font-size: 13px!important;
+  line-height: 26px!important;
 }
 
 .oil-free .title-number {
@@ -584,11 +578,6 @@ header .nav-bar {
   top: 30%;
   right: 0;
   writing-mode: vertical-rl;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
   color: #fff;
 }
 
@@ -608,7 +597,7 @@ header .nav-bar {
   opacity: 0.3;
   width: 100%;
   height: 100%;
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
   font-size: 414px;
@@ -628,7 +617,7 @@ header .nav-bar {
 .background-text-continuation {
   position: absolute;
   bottom: 0;
-  padding-left: -3%;
+  left: -3%;
   width: 100%;
   height: 50%;
   overflow: hidden;
@@ -654,26 +643,23 @@ header .nav-bar {
 
 .holiday-nonoil .title-number {
   margin-bottom: 29px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  color: #128E6F;
 }
 
 .holiday-nonoil .text-area h1 {
   margin-bottom: 24px;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 27.6px;
   line-height: 41px;
 }
 
 .holiday-nonoil .text-item p {
   margin-bottom: 17px;
-  font-size: 16px;
+  font-family: 'Zen Kaku Gothic Antique';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.6px;
   line-height: 31.2px;
 }
 
@@ -682,10 +668,10 @@ header .nav-bar {
 }
 
 .holiday-nonoil-link {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15.6px;
   line-height: 33px;
   letter-spacing: 0.78px;
   margin-top: 28px;
@@ -696,7 +682,6 @@ header .nav-bar {
 
 .holiday-nonoil-link a {
   color: #128E6F;
-  text-decoration: none;
 }
 
 .holiday-nonoil .image-area img {
@@ -708,24 +693,23 @@ header .nav-bar {
 
 /*noilly-particularセクション*/
 
+.show-sp-only {
+  display: none;
+}
+
 .noilly-particular {
   position: relative;
   margin-top: 10%;
-  height: 100%;
+  height: 632px;
   width: 100%;
+  overflow: hidden;
 }
 
 .noilly-particular .slide-logo {
-  position: absolute;
   top: 13%;
-  z-index: -1;
   width: 100%;
-  overflow: hidden;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 144px;
-  line-height: 216px;
+  position: absolute;
+  z-index: -1;
 }
 
 .slide-logo-sub {
@@ -773,19 +757,19 @@ header .nav-bar {
 }
 
 .swiper .title-number {
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 15.6px;
+  line-height: 23.4px;
   color: #128E6F;
 }
 
 .swiper-slide-item h1 {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 27.6px;
   line-height: 41px;
 }
 
@@ -794,11 +778,11 @@ header .nav-bar {
 }
 
 .swiper-slide-item p {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 31px;
+  font-size: 15.6px;
+  line-height: 31.2px;
 }
 
 /* ===== ページネーション（円形プログレスバー付き） ===== */
@@ -892,7 +876,7 @@ header .nav-bar {
 
 .product {
   position: relative;
-  margin-top: 27%;
+  margin-top: 138px;
 }
 
 .product-title {
@@ -903,7 +887,7 @@ header .nav-bar {
 
 .sub-title {
   color: #fff;
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -916,10 +900,10 @@ header .nav-bar {
   transform: translateY(-25%);
   width: 100%;
   z-index: 1;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 19.2px;
   line-height: 24px;
   letter-spacing: 2.4px;
 }
@@ -941,7 +925,7 @@ header .nav-bar {
 }
 
 .product-item h3 {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -959,40 +943,46 @@ header .nav-bar {
 
 .item-gide {
   padding: 0 3%;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 14.4px;
+  line-height: 24.5px;
 }
 
 .price {
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 20.4px;
   line-height: 31px;
 }
 
 .tax {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 13.2px;
+  line-height: 19.8px;
 }
 
 .item-btn-flex {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
   margin-top: 2%;
   padding: 0 3%;
 }
 
 .item-btn {
-  padding: 10px 17px;
-  font-size: 16px;
+  padding: 10px 1.2vw;
+  font-size: 15.6px;
   white-space: nowrap;
+  font-family: 'Kaisei Opti';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: center;
 }
 
 .view-btn a {
@@ -1001,11 +991,6 @@ header .nav-bar {
 
 .view-btn {
   border: solid 1px #333333;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
 }
 
 .view-btn:hover {
@@ -1015,12 +1000,6 @@ header .nav-bar {
 
 .sold-btn {
   border: solid 1px #A7A7A7;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  text-align: center;
   color: #A7A7A7;
 }
 
@@ -1032,12 +1011,6 @@ header .nav-bar {
 .cart-btn a {
   color: #128E6F;
   display: flex;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  text-align: center;
 }
 
 .cart-btn:hover {
@@ -1055,7 +1028,7 @@ header .nav-bar {
 
 .contact-text {
   font-size: 15.6px;
-  font-family: Zen Kaku Gothic Antique, sans-serif;
+  font-family: Zen Kaku Gothic Antique;
   line-height: 2;
   font-style: normal;
   font-weight: 300;
@@ -1067,12 +1040,12 @@ header .nav-bar {
 
 .contact a {
   font-size: 120px;
-  color: black;
+  color: #333333;
   text-decoration: none;
   display: flex;
   justify-content: center;
   gap: 48px;
-  font-family: OptimaNovaLTPro-Regular;
+  font-family: 'Kaisei Opti';
 }
 
 .contact a:hover {
@@ -1098,11 +1071,10 @@ footer {
   color: black;
   border-right: solid 1px gray;
   padding: 133.8px 20px 15px 0;
-  font-family: OptimaNovaLTPro-Regular;
-  font-family: 'Inter';
+  font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15.6px;
   line-height: 23px;
   text-align: right;
 }
@@ -1131,13 +1103,7 @@ footer .nav-bar {
 }
 
 .link-list a {
-  text-decoration: none;
   color: black;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .link-list ul {
@@ -1151,11 +1117,11 @@ footer .nav-bar {
 
 .link-bar a {
   color: #989898;
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 20px;
+  font-size: 13.2px;
+  line-height: 19.8px;
 }
 
 footer .link-bar a:hover {
@@ -1163,10 +1129,10 @@ footer .link-bar a:hover {
 }
 
 .trademark {
-  font-family: 'Inter';
+  font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 19.2px;
   line-height: 24px;
   margin-top: 10px;
   padding-left: 7%;
@@ -1179,6 +1145,11 @@ footer .link-bar a:hover {
 
   header .nav-bar {
     display: none;
+  }
+
+  .keyvisual .site-title {
+    width: 311px;
+    height: 90.34px;
   }
 
   .gray-background {
@@ -1194,12 +1165,21 @@ footer .link-bar a:hover {
     line-height: 31px;
   }
 
+  .slide-logo {
+    position: absolute;
+    z-index: -1;
+  }
+
   .drawer_button {
     transform: scale(1.5);
   }
 
   header .link-icon {
     transform: scale(1.5);
+  }
+
+  #js-header {
+    max-width: 767px;
   }
 
   .header-navFixed .link-icon {
@@ -1244,11 +1224,6 @@ footer .link-bar a:hover {
     height: 1308px;
   }
 
-  .slide-logo {
-    position: absolute;
-    z-index: -1;
-  }
-
   .noilly-meaning .slide-logo p {
     font-size: 204px;
     line-height: 306px;
@@ -1259,7 +1234,7 @@ footer .link-bar a:hover {
     align-items: stretch;
     padding-left: 12%;
     height: 650px;
-    gap: 0;
+    gap: 43px;
     position: absolute;
     z-index: 1;
     top: 630px;
@@ -1342,6 +1317,7 @@ footer .link-bar a:hover {
 
   .text-small {
     font-size: 20px!important;
+    line-height: 40.8px!important;
   }
 
   .oil-free-logo {
@@ -1372,6 +1348,7 @@ footer .link-bar a:hover {
   .background-text-initial {
     left: -40px;
     margin-top: 10px;
+    width: 140%;
   }
 
   .background-text-continuation {
@@ -1381,6 +1358,10 @@ footer .link-bar a:hover {
   .holiday-nonoil-flex {
     flex-direction: column-reverse;
     padding: 50px 12% 0;
+  }
+
+  .holiday-nonoil-flex .image-area {
+    width: 100%;
   }
 
   .holiday-nonoil-flex .text-area {
@@ -1406,124 +1387,67 @@ footer .link-bar a:hover {
     margin-top: 44px;
   }
 
+  .show-sp-only {
+    display: block;
+  }
+
+  .show-pc-only {
+    display: none;
+  }
+
+  .noilly-particular {
+    max-width: 767px;
+    height: 3000px;
+    position: relative;
+  }
+
   .noilly-particular .slide-logo {
   font-size: 170px;
   line-height: 256px;
-  overflow: hidden;
+  width: 256px;
+  height: 3000px;
+  top: 0;
   }
 
   .slide-logo-main {
-    transform: rotate(90deg);
-    top: 10%;
-    left: -50%;
+    writing-mode: vertical-rl;
+    left: -13%;
   }
 
   .slide-logo-sub {
     display: flex;
-    transform: rotate(90deg);
-    top: 10%;
-    right: -50%;
+    writing-mode: vertical-rl;
+    right: -25%;
+  }
+
+  .slide-logo-main p {
+    animation: loop3 15s linear infinite;
   }
 
   .slide-logo-sub p {
-    animation: loop2 15s linear infinite;
+    animation: loop4 15s linear infinite;
   }
 
-  /* メディアクエリ用 ここから*/
-
-  .swiper-wrapper {
-    display: block;
+  @keyframes loop3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
   }
 
-  .swiper-pagination {
-    display: none;
+  @keyframes loop4 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
-  .slider1 {
-    position: absolute;
-    top: 0;
-  }
-
-  .slider2 {
-    position: absolute;
-    top: 984px;
-  }
-
-  .point-text2 {
-    position: absolute;
-    top: 1200px;
-  }
-
-  .slider3 {
-    position: absolute;
-    top: 1968px;
-  }
-
-  .main-slider figure:nth-of-type(1) {
-    transform: rotate(0);
-  }
-
-  .main-slider figure:nth-of-type(2) {
-  transform: rotate(0);
-  }
-
-  .main-slider figure:nth-of-type(3) {
-  transform: rotate(0);
-  }
-
-  .swiper-slide-item .title-number {
-    writing-mode: vertical-rl;
-  }
-
-  .swiper-slide-item h1 {
-    writing-mode: vertical-rl;
-  }
-
-  .slide-product ul {
-    flex-direction: column;
-    margin: 0;
-    gap: 90px;
-  }
-
-  .slide-product ul li {
-    width: 100%;
-  }
-  /* メディアクエリ用 ここまで*/
-
-  .noilly-particular {
-    height: 2790px;
-  }
-
-  /* モバイルHTML用 */
-  .particular-contents {
-    display: flex;
-    flex-direction:column;
-    gap: 112px;
-  }
-
-    /* モバイルHTML用 */
-  .particular-item-image {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-    margin-bottom: 75px;
-  }
-  /* モバイルHTML用 */
-  .particular-item-title {
-    writing-mode: vertical-rl;
-  }
-
-    /* モバイルHTML用 */
-  .particular-item-title .title-number {
-    font-size: 24px;
-    margin-left: 4%;
-  }
-
-    /* モバイルHTML用 */
-  .particular-item-title h1 {
-    font-size: 43px;
-    line-height: 64px;
-    letter-spacing: 9.26328px;
+  .particular-item {
+    position: relative;
   }
 
   .point-text {
@@ -1531,37 +1455,81 @@ footer .link-bar a:hover {
     line-height: 48px;
   }
 
-    /* モバイルHTML用 */
+  /* show sp-only ここから */
+  .particular-contents {
+    display: flex;
+    flex-direction:column;
+    gap: 112px;
+  }
+
+  .particular-item-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 75px;
+  }
+
+  .particular-item-title {
+    writing-mode: vertical-rl;
+  }
+
+  .particular-item-title .title-number {
+    font-size: 24px;
+    margin-left: 4%;
+  }
+
+  .particular-item-title h1 {
+    font-size: 43px;
+    line-height: 64px;
+    letter-spacing: 9.26328px;
+  }
+
   .text-left{
     padding: 0 21% 0 7%;
   }
 
-    /* モバイルHTML用 */
   .text-right {
     padding: 0 7% 0 21%;
   }
 
-    /* モバイルHTML用 */
   .particular-item-title span {
     text-combine-upright: all;
   }
 
-    /* モバイルHTML用 */
   .image-left {
     transform: rotate(-3deg);
   }
 
-    /* モバイルHTML用 */
   .image-right {
     transform: rotate(3deg);
   }
+  /* show sp-only　ここまで */
+
+  .slide-product ul {
+    flex-direction: column;
+    margin: 0;
+    gap: 91px;
+  }
+
+  .slide-product ul li {
+    width: 100%;
+  }
 
   .product-item h3 {
+    font-size: 19px;
     margin-bottom: 37px;
   }
 
   .product-item-image {
     margin: 0 30%;
+  }
+
+  .price {
+    font-size: 23.4px;
+  }
+
+  .tax {
+    font-size: 14px;
   }
 
   .price-notation {
@@ -1573,6 +1541,7 @@ footer .link-bar a:hover {
   .item-gide {
     padding: 0 22%;
     line-height: 1.7;
+    font-size: 15.6px;
   }
 
   .item-btn-flex {
@@ -1580,31 +1549,36 @@ footer .link-bar a:hover {
   }
 
   .item-btn {
-    width: 45%;
-    height: 30%;
-    padding: 10px 60px;
+    width: 48%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
   }
 
   .cart-btn a {
     gap: 10px;
+    font-size: 24px;
+    justify-content: center;
   }
 
   .contact {
-    padding: 0 20%;
-    margin-bottom: 148px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    margin: 111px 0 148px;
+  }
+
+  .contact p {
+    margin-bottom: 0;
   }
 
   .contact a {
-    font-size: 80px;
-    white-space: nowrap;
+    font-size: 70px;
   }
 
   .contact-text {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    font-size: 24px;
+    margin-bottom: 0;
   }
 
   .page-top {
@@ -1617,17 +1591,26 @@ footer .link-bar a:hover {
 
   footer {
     padding-bottom: 50px;
+    height: 170px;
+    border-top: 0.8px solid #CCCCCC;
   }
 
-  .footer-flex {
-    padding: 0 22%;
+  .footer-flex .site-title {
+    position: absolute;
+    top:50%;
+    left: 7%;
+    width: 215px;
+    height: 34px;
   }
 
   .trademark {
     position: absolute;
-    top: 0;
-    right: 20%;
+    top: 50%;
+    right: 7%;
     margin: 0;
+    color: #333333;
+    font-size: 27px;
+    font-weight: 300;
   }
 
 }
