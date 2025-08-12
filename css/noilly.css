@@ -29,7 +29,7 @@ a {
 .inview {
   top: 50px;
   opacity: 0;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .inview.show {
@@ -641,6 +641,10 @@ header .nav-bar {
   width: 50%;
 }
 
+.holiday-nonoil .image-area img {
+  max-width: 100%;
+}
+
 .holiday-nonoil .title-number {
   margin-bottom: 29px;
 }
@@ -902,7 +906,7 @@ header .nav-bar {
   z-index: 1;
   font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 19.2px;
   line-height: 24px;
   letter-spacing: 2.4px;
@@ -1165,11 +1169,6 @@ footer .link-bar a:hover {
     line-height: 31px;
   }
 
-  .slide-logo {
-    position: absolute;
-    z-index: -1;
-  }
-
   .drawer_button {
     transform: scale(1.5);
   }
@@ -1222,6 +1221,11 @@ footer .link-bar a:hover {
   .noilly-meaning-position {
     position: relative;
     height: 1308px;
+  }
+
+  .slide-logo {
+    position: absolute;
+    z-index: -1;
   }
 
   .noilly-meaning .slide-logo p {

@@ -1,7 +1,7 @@
 // レスポンシブ対応　keyvisualセクションの高さを可変にする
 $(function(){
   // カレー画像の高さを取得して、変数curryImageに代入
-  var curryImage = $('.curry-img').height();
+  const curryImage = $('.curry-img').height();
   // 画面幅が767pxより大きい場合
   if ($(window).width() > 767) {
     // keyvisualセクションにカレー画像の高さを代入
@@ -9,6 +9,16 @@ $(function(){
   } else {
     // keyvisualセクションにカレー画像の高さ+320pxを代入
     $('.keyvisual').css('height',curryImage+320+'px');
+  }
+});
+
+$(function(){
+  // particular-contentsの高さを取得して、変数particularHeightに代入
+  const particularHeight = $('.particular-contents').height();
+  // 画面幅が767pxより小さい場合
+  if ($(window).width() < 767) {
+    // noilly-particularセクションに代入
+    $('.noilly-particular').css('height',particularHeight +'px');
   }
 });
 
@@ -47,6 +57,16 @@ $(function () {
     $("#js-header-button").toggleClass("active");
     // 非表示メニューのclass属性を切り替え
     $(".drawer_nav_wrapper").toggleClass("open");
+  });
+});
+
+$(function () {
+  // page-topボタンをクリックしたときに実行する処理
+  $(".page-top").click(function () {
+    /// ページトップへ移動する
+    $('html,body').animate({
+    scrollTop: 0
+    });
   });
 });
 
@@ -172,36 +192,9 @@ $(window).on('load resize',function(){
     }
 });
 
-// グローバル変数をboolean型で定義
-let scrollFlag = false;
-
-// スクロール操作した時の処理を指定
-$(window).on('scroll', function () {
-  // scrollFlagがfalseであれば処理を抜ける
-  if (scrollFlag == false) {
-    return;
-  }
-  // クラス名【inview】が付与されている要素に対して処理を実行
-  $('.inview').each(function() {
-    // ブラウザの最上部から要素までの位置を取得
-    const targetPosition = $(this).offset().top;
-    // ブラウザの最上部からのスクロール量を取得
-    const scroll = $(window).scrollTop();
-    // ウィンドウの高さを取得
-    const windowHeight = $(window).height();
-    // ブラウザの最上部からのスクロール量 > 要素の位置 - ウィンドウの高さ の場合
-    if (scroll > targetPosition - windowHeight) {
-      // クラス名【show】を追加
-      $(this).addClass('show');
-    }
+// 表示領域に入ったらclass付与
+$(function () {
+  $('.inview').on("inview", function () {
+    $(this).addClass('show');
   });
 });
-
-// 画面を読み込んだ時の処理を指定
-$(window).on('load', function () {
-    // クラス名【show】を外す
-    $('.inview').each(function() {
-      $(this).removeClass('show');
-    });
-  });
-  scrollFlag = true;
