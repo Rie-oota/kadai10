@@ -2,14 +2,8 @@
 $(function(){
   // カレー画像の高さを取得して、変数curryImageに代入
   const curryImage = $('.curry-img').height();
-  // 画面幅が767pxより大きい場合
-  if ($(window).width() > 767) {
-    // keyvisualセクションにカレー画像の高さを代入
-    $('.keyvisual').css('height',curryImage+'px');
-  } else {
-    // keyvisualセクションにカレー画像の高さ+320pxを代入
-    $('.keyvisual').css('height',curryImage+320+'px');
-  }
+  // keyvisualセクションにカレー画像の高さを代入
+  $('.keyvisual').css('height',curryImage+'px');
 });
 
 $(function(){
