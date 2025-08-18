@@ -588,6 +588,9 @@ header .nav-bar {
 }
 
 .background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #fff;
   opacity: 0.3;
   font-family: 'Kaisei Opti';
@@ -595,6 +598,8 @@ header .nav-bar {
   font-weight: 400;
   font-size: 34.5rem;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .background-text-initial {
@@ -678,7 +683,7 @@ header .nav-bar {
 
 .noilly-particular {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 15rem;
   width: 100%;
   overflow: hidden;
 }
@@ -761,6 +766,7 @@ header .nav-bar {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 2;
+  margin-bottom: 6rem;
 }
 
 /* ===== ページネーション（円形プログレスバー付き） ===== */
@@ -1324,16 +1330,20 @@ footer .link-bar a:hover {
 
   .background-text {
     font-size: 14.6rem;
+    width: 100%;
+    overflow: hidden;
   }
 
   .background-text-initial {
     left: -1.5rem;
     top: 1rem;
+    overflow: hidden;
   }
 
   .background-text-continuation {
     top: 19rem;
     left: -1.5rem;
+    overflow: hidden;
   }
 
   .holiday-nonoil-flex {
@@ -1370,6 +1380,7 @@ footer .link-bar a:hover {
 
   .noilly-particular {
     position: relative;
+    padding-top: 2rem;
   }
 
   .noilly-particular .slide-logo {
