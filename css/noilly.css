@@ -18,7 +18,7 @@ body {
 
 img {
   max-width: 100%;
-  height: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -41,7 +41,7 @@ a {
 
 header {
   position: relative;
-  z-index: 1100;
+  z-index: 6;
   height: 14.4rem;
   width: 100%;
 }
@@ -55,18 +55,18 @@ header {
   display: flex;
   justify-content:space-between;
   align-items:center;
-  z-index: 1100;
+  z-index: 7;
   padding: 0 6%;
   white-space: nowrap;
 }
 
 .header-navFixed {
   position: fixed;
-  top: -200px; /* ヘッダーの高さ分上にする(隠す) */
+  top: -7.2rem; /* ヘッダーの高さ分上にする(隠す) */
   transition: top .5s; /* アニメーション効果を追加 */
   width: 100%;
   height: 7.2rem;
-  z-index: 1050;
+  z-index: 6;
 }
 
 .header-navFixed-menu {
@@ -79,17 +79,17 @@ header {
 }
 
 .header-navFixed .site-title {
-  width: 99.6px;
-  height: 33.7px;
+  width: 8.3rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 6;
 }
 
 #js-header.is-show {
-  top: 0px; /* 隠していたヘッダーを表示 */
-  z-index: 2000;
+  top: 0; /* 隠していたヘッダーを表示 */
+  z-index: 7;
 }
 
 /* ハンバーガーメニュー */
@@ -109,7 +109,8 @@ header {
   appearance: none;
   text-align: left;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+}
 
 .drawer_button {
   display: block;
@@ -123,7 +124,8 @@ header {
   letter-spacing: 0.1em;
   cursor: pointer;
   outline: none;
-  z-index: 1002; }
+  z-index: 6;
+}
 
 .drawer_button .drawer_bar {
   display: block;
@@ -133,17 +135,21 @@ header {
   transform-origin: 0% 0%;
   transform: translateY(-50%);
   position: absolute;
-  left: 0; }
+  left: 0;
+}
 
 .drawer_button .drawer_bar_first {
-  top: 0; }
+  top: 0;
+}
 
 .drawer_button .drawer_bar_second {
-  top: 50%; }
+  top: 50%;
+}
 
 .drawer_button .drawer_bar_third {
   width: 1.6rem;
-  top: 100%; }
+  top: 100%;
+}
 
 .drawer_button.active .drawer_bar {
   width: 2.4rem;
@@ -151,7 +157,7 @@ header {
 }
 
 .drawer_button.active .drawer_bar_first {
-  transform: rotate(45deg) translateY(100%);
+  transform: translateY(100%) rotate(45deg);
 }
 
 .drawer_button.active .drawer_bar_second {
@@ -171,31 +177,38 @@ header {
 }
 
 .drawer_button {
-  color: black; }
+  color: black;
+}
 
 .drawer_button .drawer_bar {
-  background-color: black; }
+  background-color: black;
+}
 
 /* === Hambuerger Button's Style End === */
 .drawer_menu a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .drawer_menu a:visited {
-  color: inherit; }
+  color: inherit;
+}
 
 .drawer_menu .drawer_nav_wrapper {
   width: 40rem;
   height: 100vh;
   transition: all 0.5s;
-  transform: translate(-480px);
+  transform: translate(-101%);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-  background-color: cadetblue; }
-  .drawer_menu .drawer_nav_wrapper.open {
-    transform: translate(0); }
+  z-index: 5;
+  background-color: cadetblue;
+}
+
+.drawer_menu .drawer_nav_wrapper.open {
+  transform: translate(0);
+}
 
 .drawer_content {
   padding: 0 5.5rem;
@@ -204,17 +217,6 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
-.drawer_menu.left .drawer_button {
-  right: auto;
-  left: 32px; }
-
-.drawer_menu.left .drawer_nav_wrapper {
-  transform: translate(480px);
-  right: auto;
-  left: 0; }
-  .drawer_menu.left .drawer_nav_wrapper.open {
-    transform: translate(0); }
 
 /*+++ Default Navigation CSS +++*/
 
@@ -243,7 +245,7 @@ header {
 
 .link-border {
   height: 1px;
-  width: 72px;
+  width: 6rem;
   background-color: #e5e7eb;
   margin-top: 4.7rem;
 }
@@ -256,7 +258,7 @@ header {
 }
 
 .drawer-link-bar a {
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .drawer-link-bar a:hover {
@@ -285,8 +287,8 @@ header .nav-bar {
 }
 
 .nav-bar {
-  gap: 22px;
-  z-index: 1101;
+  gap: 4rem;
+  z-index: 7;
   white-space: nowrap;
 }
 
@@ -295,7 +297,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 24px;
 }
 
 .nav-bar a:hover {
@@ -315,10 +316,8 @@ header .nav-bar {
 }
 
 .link-icon {
-  width: 54.28px;
-  height: 24px;
   align-items:center;
-  justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .link-icon svg:hover {
@@ -334,7 +333,7 @@ header .nav-bar {
 
 .gray-background {
   position: absolute;
-  top: -180px;
+  top: -14.4rem;
   right: 0;
   width: 80%;
 }
@@ -348,14 +347,19 @@ header .nav-bar {
   width: 85%;
 }
 
+.keyvisual img {
+  height: 100%;
+  width: 100%;
+}
+
 .keyvisual .site-title {
   position: absolute;
-  top: -21.85px;
+  top: -1.4rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  width: 300px;
-  height: 87.15px;
+  width: 25rem;
+  height: auto;
 }
 
 .scroll {
@@ -366,7 +370,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 20px;
 }
 
 .scroll-text {
@@ -376,9 +379,9 @@ header .nav-bar {
 
 .scroll-bar {
   width: 1px;
-  height: 85px;
+  height: 8.7rem;
   background-color: #e5e7eb;;
-  margin: 16px 0 0 8px;
+  margin: 1rem 0 0 0.5rem;
   animation: scrollAnimation 1.5s ease-out infinite;
 }
 
@@ -413,7 +416,7 @@ header .nav-bar {
 }
 
 .noilly-meaning .slide-logo p {
-  margin-right: 44px;
+  margin-right: 50px;
 }
 
 .slide-logo {
@@ -465,6 +468,11 @@ header .nav-bar {
   width: 45%;
 }
 
+.noilly-meaning-flex img {
+  width: 100%;
+  height: 100%;
+}
+
 .noilly-meaning .title-number {
   margin-bottom: 3rem;
 }
@@ -475,7 +483,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: 1.3rem;
-  line-height: 23.4px;
 }
 
 .noilly-meaning .text-area h1 {
@@ -487,7 +494,7 @@ header .nav-bar {
 }
 
 .noilly-meaning .text-area .text-item p {
-  margin-bottom: 18px;
+  margin-bottom: 1.5rem;
   font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
@@ -506,14 +513,9 @@ header .nav-bar {
   padding-right: 12.3rem;
   padding-left: 17.2rem;
   padding-bottom: 7.8rem;
-}
-
-.oil-free-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  object-fit: cover;
+  background-image: url(https://placehold.jp/1440x545.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .oil-free-flex {
@@ -529,14 +531,23 @@ header .nav-bar {
   height: 47.3rem;
 }
 
+.oil-free .image-content {
+  height: 100%;
+}
+
+.oil-free img {
+  width: 100%;
+  height: 100%;
+}
+
 .oil-free-logo {
   position: absolute;
-  bottom: -5%;
-  left: -15%;
+  bottom: -1.5rem;
+  left: -3rem;
   z-index: 1;
   color: #fff;
   opacity: 0.5;
-  font-size: 95px;
+  font-size: 6rem;
   writing-mode: vertical-rl;
   white-space: nowrap;
 }
@@ -634,7 +645,8 @@ header .nav-bar {
 }
 
 .holiday-nonoil .image-area img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .holiday-nonoil .title-number {
@@ -723,6 +735,11 @@ header .nav-bar {
   height: 100%;
 }
 
+.main-slider img {
+  width: 100%;
+  height: 100%;
+}
+
 .main-slider figure:nth-of-type(1) {
   transform: rotate(-14deg);
   z-index: 1;
@@ -784,22 +801,22 @@ header .nav-bar {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  z-index: 10;
+  gap: 1rem;
+  z-index: 2;
 }
 .swiper-pagination-bullet {
-  width: 45px;
-  height: 45px;
+  width: 4.4rem;
+  height: 4.4rem;
   background: transparent;
   color: black;
   opacity: 1;
-  border: 2px solid transparent;  /* 非アクティブ時はボーダー透明 */
+  border: 1px solid transparent;  /* 非アクティブ時はボーダー透明 */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s;
   position: relative;
@@ -808,7 +825,7 @@ header .nav-bar {
   background: transparent;
   color: #128E6F;
   opacity: 1;
-  border: 2px solid transparent;  /* アクティブ時もボーダーは透明（SVGで表現） */
+  border: 1px solid transparent;  /* アクティブ時もボーダーは透明（SVGで表現） */
 }
 /* SVG円形プログレスバー */
 .pagination-circle {
@@ -857,7 +874,7 @@ header .nav-bar {
 /* 中央の数字表示 */
 .circle_inner {
   position: relative;
-  z-index: 4;
+  z-index: 2;
   font-weight: bold;
 }
 
@@ -880,7 +897,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: 6rem;
-  line-height: 108px;
 }
 
 .product-title h1 {
@@ -893,24 +909,23 @@ header .nav-bar {
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 24px;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.2rem;
 }
 
 .slide-product {
-  margin-top: 8%;
+  margin-top: 7rem;
 }
 
 .slide-product ul {
   display: flex;
+  justify-content: space-around;
   list-style: none;
   overflow: hidden;
-  gap: 7%;
-  margin-left: -10%;
+  gap: min(7rem, 91px);
 }
 
 .slide-product ul li {
-  width: 30%;
+  width: min(28rem, 364px);
 }
 
 .product-item h3 {
@@ -918,7 +933,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: min(1.5rem, 19px);
-  line-height: 27px;
   margin-bottom: 20%;
   text-align: center;
 }
@@ -926,17 +940,17 @@ header .nav-bar {
 .price-notation {
   display: flex;
   align-items: baseline;
-  margin-bottom: 2%;
-  padding: 3% 2% 0;
+  margin-bottom: 1rem;
+  padding: 2rem 1.5rem 0;
 }
 
 .item-gide {
-  padding: 0 3%;
+  padding: 0 1.5rem;
   font-family: 'Zen Kaku Gothic Antique';
   font-style: normal;
   font-weight: 400;
   font-size: min(1.2rem, 15.6px);
-  line-height: 24.5px;
+  line-height: 1.7;
 }
 
 .price {
@@ -944,7 +958,6 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: min(1.7rem, 23.4px);
-  line-height: 31px;
 }
 
 .tax {
@@ -952,15 +965,14 @@ header .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: min(1.1rem, 14px);
-  line-height: 19.8px;
 }
 
 .item-btn-flex {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
-  margin-top: 2%;
-  padding: 0 3%;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .item-btn {
@@ -1017,7 +1029,7 @@ header .nav-bar {
 
 .contact {
   position: relative;
-  margin: 135px 0 60px;
+  margin: 13.5rem 0 6rem;
   text-align: center;
 }
 
@@ -1027,10 +1039,7 @@ header .nav-bar {
   line-height: 2;
   font-style: normal;
   font-weight: 300;
-}
-
-.contact p {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .contact a {
@@ -1054,8 +1063,8 @@ footer {
 }
 
 .page-top {
-  height: 172px;
-  padding: 0 5%;
+  height: 17.2rem;
+  padding: 0 4.4rem;
 }
 
 .page-top a {
@@ -1065,12 +1074,11 @@ footer {
   text-decoration: none;
   color: black;
   border-right: solid 1px gray;
-  padding: 133.8px 20px 15px 0;
+  padding: 16.3rem 1.25rem 0.9rem 0;
   font-family: 'Kaisei Opti';
   font-style: normal;
   font-weight: 400;
   font-size: 1.3rem;
-  line-height: 23px;
   text-align: right;
 }
 
@@ -1084,13 +1092,12 @@ footer {
 
 .footer-flex {
   display: flex;
-  column-gap: 14.15%;
-  padding: 0 7%;
+  column-gap: 10rem;
+  padding: 0 8rem;
 }
 
 footer .site-title {
-  width: 116px;
-  height: 33.7px;
+  width: 12rem;
 }
 
 footer .nav-bar {
@@ -1107,7 +1114,7 @@ footer .nav-bar {
 }
 
 .link-bar {
-  gap: 19px;
+  gap: 1.5rem;
 }
 
 .link-bar a {
@@ -1116,7 +1123,6 @@ footer .nav-bar {
   font-style: normal;
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 19.8px;
 }
 
 footer .link-bar a:hover {
@@ -1128,10 +1134,9 @@ footer .link-bar a:hover {
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 24px;
-  margin-top: 10px;
-  padding-left: 7%;
-  margin-bottom: 90px;
+  margin-top: 1rem;
+  padding-left: 8rem;
+  margin-bottom: 9rem;
 }
 
 /* レスポンシブ対応 */
@@ -1183,7 +1188,8 @@ footer .link-bar a:hover {
   }
 
   .scroll {
-    line-height: 31px;
+    bottom: 9rem;
+    right: 1.5rem;
   }
 
   #js-header {
@@ -1269,7 +1275,7 @@ footer .link-bar a:hover {
   }
 
   .oil-free .text-area {
-    padding: 55px 0 0 0;
+    padding: 10.8rem 0 0 0;
   }
 
   .oil-free .text-area h1 {
@@ -1281,7 +1287,7 @@ footer .link-bar a:hover {
   }
 
   .text-small {
-    line-height: 40.8px!important;
+    line-height: 2!important;
   }
 
   .oil-free-logo {
@@ -1361,6 +1367,7 @@ footer .link-bar a:hover {
   .noilly-particular {
     position: relative;
     padding-top: 2rem;
+    margin-top: 0;
   }
 
   .noilly-particular .slide-logo {
@@ -1480,8 +1487,7 @@ footer .link-bar a:hover {
 
   .slide-product ul {
     flex-direction: column;
-    margin: 0;
-    gap: 91px;
+    margin: 3rem 0 0 0;
   }
 
   .slide-product ul li {
@@ -1499,20 +1505,20 @@ footer .link-bar a:hover {
   .price-notation {
     align-items: baseline;
     margin-bottom: 2%;
-    padding: 37px 22% 0;
+    padding: 2rem 7.5rem 0;
   }
 
   .item-gide {
-    padding: 0 22%;
+    padding: 0 7.5rem;
     line-height: 1.7;
   }
 
   .item-btn-flex {
-    padding: 0 22%;
+    padding: 0 7.5rem;
   }
 
   .cart-btn a {
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
   }
 
@@ -1544,22 +1550,22 @@ footer .link-bar a:hover {
   }
 
   footer {
-    padding-bottom: 50px;
-    height: 170px;
+    height: 9.2rem;
     border-top: 0.8px solid #CCCCCC;
   }
 
   .footer-flex .site-title {
     position: absolute;
-    top:50%;
-    left: 7%;
+    left: 3rem;
+    bottom: 2.7rem;
     width: 11.6rem;
+    height: auto;
   }
 
   .trademark {
     position: absolute;
-    top: 50%;
-    right: 7%;
+    bottom: 2.7rem;
+    right: 3rem;
     margin: 0;
     color: #333333;
     font-weight: 300;
